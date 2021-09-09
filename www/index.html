@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>我的聊天室</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="banner">
+        <h3>ChatRoom</h3>
+        <span id="status" style="color: green"></span>
+      </div>
+      <div id="historyLog"></div>
+
+      <div class="input">
+        <textarea
+          id="messageInput"
+          cols="30"
+          rows="10"
+          placeholder="say something"
+        ></textarea>
+        <input id="sendBtn" type="button" value="Send" />
+      </div>
+    </div>
+
+    <div id="loginWrapper">
+      <div class="loginBox">
+        <p id="info">loading</p>
+        <div id="nicknameInput">
+          <input id="nameInput" type="text" placeholder="input your nickname" />
+          <button id="loginBtn">Enter</button>
+          <!-- <input  type="button" value="Enter" /> -->
+        </div>
+      </div>
+    </div>
+    <!-- <script src="../node_modules/socket.io/dist/socket.js"></script> -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/chat.js"></script>
+  </body>
+</html>
